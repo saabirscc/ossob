@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Ossob Coffee · pick a direction</title>
+<meta name="theme-color" content="#062a1b">
+<link rel="icon" href="../brand/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,600;1,500&family=Bricolage+Grotesque:opsz,wght@12..96,800&family=Manrope:wght@500;700;800&display=swap">
+<style>
+  * { box-sizing: border-box; }
+  body { margin: 0; min-height: 100vh; background: #062a1b; color: #f4ecdc; font: 500 16px/1.55 Manrope, system-ui, sans-serif; padding: clamp(24px, 5vw, 64px) clamp(16px, 4vw, 48px);
+    background-image: radial-gradient(60% 50% at 80% 0%, rgba(207,175,122,.14), transparent 70%), radial-gradient(70% 60% at 0% 100%, rgba(0,102,58,.5), transparent 70%); }
+  header { display: flex; align-items: center; gap: 18px; flex-wrap: wrap; margin-bottom: 10px; }
+  header img { height: 54px; width: auto; }
+  h1 { margin: 0; font: 600 clamp(2.2rem, 5.5vw, 4rem)/1 "Cormorant Garamond", Georgia, serif; letter-spacing: -.01em; }
+  h1 i { color: #cfaf7a; font-weight: 500; }
+  .lead { margin: 12px 0 34px; color: #b9c9bc; max-width: 64ch; }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 22px; }
+  a.card { position: relative; display: grid; grid-template-rows: auto 1fr; border-radius: 24px; overflow: hidden; text-decoration: none; color: inherit; border: 1px solid rgba(207,175,122,.18); background: #0a3624; transition: transform .35s cubic-bezier(.22,1,.36,1), border-color .3s, box-shadow .35s; }
+  a.card:hover { transform: translateY(-6px); border-color: #cfaf7a; box-shadow: 0 30px 60px -30px rgba(207,175,122,.45); }
+  a.card:focus-visible { outline: 3px solid #cfaf7a; outline-offset: 4px; }
+  .thumb { position: relative; aspect-ratio: 16 / 10; overflow: hidden; background: #041f14; }
+  .thumb iframe { position: absolute; left: 0; top: 0; width: 400%; height: 400%; transform: scale(.25); transform-origin: 0 0; border: 0; pointer-events: none; }
+  .thumb.app { display: grid; place-items: center; background: radial-gradient(60% 70% at 50% 40%, #00894e, #00663a 55%, #04482b); }
+  .phone { width: 34%; aspect-ratio: 9 / 18; border-radius: 22px; border: 3px solid #032416; background: #f6f1e6; display: grid; place-items: center; box-shadow: 0 24px 40px -18px rgba(0,0,0,.7); }
+  .phone img { width: 58%; height: auto; }
+  .body { padding: 18px 20px 22px; }
+  .tag { font: 800 .72rem Manrope; letter-spacing: .2em; text-transform: uppercase; color: #cfaf7a; }
+  h2 { margin: 6px 0 6px; font: 600 2.1rem/1 "Cormorant Garamond", Georgia, serif; }
+  .b h2 { font: 800 2rem/1 "Bricolage Grotesque", system-ui, sans-serif; letter-spacing: -.04em; }
+  p { margin: 0; color: #d3dccf; }
+  .go { display: inline-block; margin-top: 12px; font-weight: 800; color: #cfaf7a; }
+  .facts { margin-top: 40px; padding: 20px 22px; border-radius: 20px; border: 1px dashed rgba(207,175,122,.35); color: #b9c9bc; font-size: .92rem; max-width: 900px; }
+  .facts b { color: #f4ecdc; }
+  footer { margin-top: 28px; color: #7f9a8a; font-size: .85rem; }
+</style>
+</head>
+<body>
+<header><img src="../brand/logo-white.png" alt="Ossob Coffee" width="1042" height="417"><h1>Two <i>directions</i></h1></header>
+<p class="lead">Two ways to put Ossob Coffee on the web, each with the full menu, the story, the gallery, hours and directions. Open each one and scroll all the way through, then pick the one to build into the real site. The ordering and loyalty app is linked from both.</p>
+<div class="grid">
+  <a class="card" href="a/">
+    <div class="thumb"><iframe src="a/?nointro" title="Preview A" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">A · 3D · roastery</span><h2>Rooted in Mogadishu</h2><p>Deep green and gold. Roasted beans pour from above and spiral into a V60, the kettle tips, the grounds bloom and the coffee drips through as the Ossob crest forms. Scroll and the counter changes: the roast, the espresso bar, the signatures, cold.</p><span class="go">Open A →</span></div>
+  </a>
+  <a class="card b" href="b/">
+    <div class="thumb"><iframe src="b/?nointro" title="Preview B" loading="lazy" tabindex="-1"></iframe></div>
+    <div class="body"><span class="tag">B · 3D · bold</span><h2>Good coffee. Good day.</h2><p>Cream paper and Ossob green, giant type. The Ossob paper cup drops in and bounces, the latte art pours itself, beans orbit it. Every chapter pops its piece in with a spin: hot, iced, slow bar, sweet.</p><span class="go">Open B →</span></div>
+  </a>
+  <a class="card" href="../app/">
+    <div class="thumb app"><div class="phone"><img src="../brand/mark-green.png" alt="" width="280" height="370"></div></div>
+    <div class="body"><span class="tag">App</span><h2>Order in the app</h2><p>The Ossob Coffee app: order ahead for pick-up or delivery, pay with EVC Plus or credit, show your Pay QR, collect stars for free drinks. Both directions link to it.</p><span class="go">Open the app →</span></div>
+  </a>
+</div>
+<div class="facts"><b>What is real:</b> logo, colours, menu names, descriptions and prices (from ossobcoffee.com), photos (their site and Instagram), address, hours, phone and socials. <b>What is a placeholder:</b> prices for Caramel Frappe, Sahleb, Black Tea, Tiramisu, Brownie and Basbousa (marked “demo”), and everything money-related in the app.</div>
+<footer>Previews for Ossob Coffee · Photos: Ossob Coffee · 3D coffee ware modelled in code with three.js</footer>
+</body>
+</html>
